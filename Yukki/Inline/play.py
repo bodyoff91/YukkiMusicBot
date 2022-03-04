@@ -26,7 +26,7 @@ def url_markup(videoid, duration, user_id, query, query_type):
         ],
         [
             InlineKeyboardButton(
-                text="🔎 المزيد من البحث",
+                text="🔎 جاري البحث",
                 callback_data=f"Search {query}|{user_id}",
             ),
             InlineKeyboardButton(
