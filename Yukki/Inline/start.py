@@ -20,10 +20,10 @@ def setting_markup2():
             ),
         ],
         [
-            InlineKeyboardButton(text="✖️ Close", callback_data="close"),
+            InlineKeyboardButton(text="✖️ اغلاق", callback_data="close"),
         ],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} الاعدادت**", buttons
 
 
 def start_pannel():
@@ -166,7 +166,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu",
+                    text="🗂 المساعده Commands Menu",
                     callback_data="search_helper_mess",
                 ),
             ],
@@ -203,11 +203,11 @@ def setting_markup():
             ),
         ],
         [
-            InlineKeyboardButton(text="✖️ Close", callback_data="close"),
-            InlineKeyboardButton(text="🔙 Go Back", callback_data="okaybhai"),
+            InlineKeyboardButton(text="✖️ اغلاق", callback_data="close"),
+            InlineKeyboardButton(text="🔙 الرجوع الي الخلف", callback_data="okaybhai"),
         ],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} الاعدادات**", buttons
 
 
 def volmarkup():
@@ -230,9 +230,9 @@ def volmarkup():
                 text="🔽 Custom Volume 🔽", callback_data="Custommarkup"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 الرجوع الي الخلف", callback_data="settingm")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} الاعدادت**", buttons
 
 
 def custommarkup():
@@ -251,23 +251,23 @@ def custommarkup():
         ],
         [InlineKeyboardButton(text="🔼Custom Volume 🔼", callback_data="AV")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} الاعدات**", buttons
 
 
 def usermarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="👥 Everyone", callback_data="EVE"),
-            InlineKeyboardButton(text="🙍 Admins", callback_data="AMS"),
+            InlineKeyboardButton(text="👥 الجميع", callback_data="EVE"),
+            InlineKeyboardButton(text="🙍 الادمن", callback_data="AMS"),
         ],
         [
             InlineKeyboardButton(
                 text="📋 Authorized Users Lists", callback_data="USERLIST"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 الرجوع الي الخلف", callback_data="settingm")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} الاعدادت**", buttons
 
 
 def dashmarkup():
@@ -280,6 +280,6 @@ def dashmarkup():
             InlineKeyboardButton(text="💻 Cpu", callback_data="CPT"),
             InlineKeyboardButton(text="💽 Disk", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 الرجوع الي الخلف", callback_data="settingm")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} الاعدادت**", buttons
