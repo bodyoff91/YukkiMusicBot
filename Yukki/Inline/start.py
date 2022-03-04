@@ -31,12 +31,12 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗂 المساعده Commands Menu", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🔧 الاعدادت", callback_data="settingm"
                 )
             ],
         ]
@@ -45,17 +45,17 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗂 المساعدت Commands Menu", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🔧 الاعدادت", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="جروب المطور ✉", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -64,17 +64,17 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗂 المساعده Commands Menu", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🔧 الاعدادت", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="قناه البوت ✉"", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -83,20 +83,20 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗂المساعده Commands Menu", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🔧 الاعدادت", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="✉قناه البوت", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="جروب المطور ✉", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -108,13 +108,13 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu",
+                    text="🗂 المساعده Commands Menu",
                     callback_data="search_helper_mess",
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "➕ اضفني الي مجموعتك",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
@@ -124,19 +124,19 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu",
+                    text="🗂 المساعده Commands Menu",
                     callback_data="search_helper_mess",
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "➕ اضفني الي مجموعتك",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="قناه البوت ✉", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -145,19 +145,19 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu",
+                    text="🗂 المساعده Commands Menu",
                     callback_data="search_helper_mess",
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "➕ اضفني الي مجموعتك",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="قناه البوت ✉", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -172,16 +172,16 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "➕ اضفني الي مجموعتك",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="قناه البوت ✉"", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="جروب المطور ✉", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
