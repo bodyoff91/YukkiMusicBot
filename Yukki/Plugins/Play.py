@@ -46,7 +46,7 @@ async def play(_, message: Message):
         db_mem[message.chat.id] = {}
     if message.sender_chat:
         return await message.reply_text(
-            "You're an __Anonymous Admin__ in this Chat Group!\nRevert back to User Account From Admin Rights."
+            "أنت __المسؤول المجهول__ في مجموعة الدردشة هذه! قم بالعودة إلى حساب المستخدم من حقوق المسؤول"
         )
     audio = (
         (message.reply_to_message.audio or message.reply_to_message.voice)
@@ -67,7 +67,7 @@ async def play(_, message: Message):
             read = db_mem[message.chat.id]["live_check"]
             if read:
                 return await mystic.edit(
-                    "Live Streaming Playing...Stop it to play music"
+                    "تشغيل البث المباشر ... أوقفه لتشغيل الموسيقى"
                 )
             else:
                 pass
@@ -119,7 +119,7 @@ async def play(_, message: Message):
                 pass
             else:
                 return await message.reply_text(
-                    "Sorry! Bot only allows limited number of video calls due to CPU overload issues. Many other chats are using video call right now. Try switching to audio or try again later"
+                    "عذرًا! لا يسمح الروبوت إلا بعدد محدود من مكالمات الفيديو بسبب مشاكل التحميل الزائد لوحدة المعالجة المركزية. تستخدم العديد من الدردشات الأخرى مكالمة الفيديو الآن. حاول التبديل إلى الصوت أو حاول مرة أخرى لاحقًا"
                 )
         mystic = await message.reply_text(
             "🔄 جاري استخراج رابط الفيديو الرجاء الانتظار!"
@@ -128,7 +128,7 @@ async def play(_, message: Message):
             read = db_mem[message.chat.id]["live_check"]
             if read:
                 return await mystic.edit(
-                    "Live Streaming Playing...Stop it to play music"
+                    "تشغيل البث المباشر ... أوقفه لتشغيل الموسيقى"
                 )
             else:
                 pass
@@ -169,7 +169,7 @@ async def play(_, message: Message):
             await message.reply_photo(
                 photo="Utils/Playlist.jpg",
                 caption=(
-                    "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\nIf you want to play Playlists! Select the one from Below."
+                    "**Usage:** /play [اسم الموسيقى أو رابط Youtube أو الرد على الصوت] \ n \ n إذا كنت تريد تشغيل قوائم التشغيل! حدد واحد من أدناه."
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -202,7 +202,7 @@ async def Music_Stream(_, CallbackQuery):
         read1 = db_mem[CallbackQuery.message.chat.id]["live_check"]
         if read1:
             return await CallbackQuery.answer(
-                "Live Streaming Playing...Stop it to play music",
+                "تشغيل البث المباشر ... أوقفه لتشغيل الموسيقى",
                 show_alert=True,
             )
         else:
@@ -217,12 +217,12 @@ async def Music_Stream(_, CallbackQuery):
     if str(duration) == "None":
         buttons = livestream_markup("720", videoid, duration, user_id)
         return await CallbackQuery.edit_message_text(
-            "**Live Stream Detected**\n\nWant to play live stream? This will stop the current playing musics(if any) and will start streaming live video.",
+            "**تم اكتشاف البث المباشر ** \ n \ n هل تريد تشغيل البث المباشر؟ سيؤدي هذا إلى إيقاف تشغيل الموسيقى الحالية (إن وجدت) وسيبدأ بث الفيديو المباشر.",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "This is not for you! Please search You Own Song.",
+            "هذا ليس لك! الرجاء البحث أنت تملك أغنية.",
             show_alert=True,
         )
     await CallbackQuery.message.delete()
