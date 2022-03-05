@@ -56,7 +56,7 @@ async def play(_, message: Message):
                 "**Usage:**\n\n/song [Youtube Url or Music Name]\n\nDownloads the Particular Query."
             )
             return
-        mystic = await message.reply_text("🔍 جارس البحث عن المطلوب...")
+        mystic = await message.reply_text("🔍 جاري البحث عن المطلوب...")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -124,7 +124,7 @@ async def song_right(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎العنوان: **{title}\n\n⏳زمان الاغنيه:** {duration_min} Mins\n\n__[احصل علي معلومات اضافيه](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -149,7 +149,7 @@ async def song_right(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎العنوان: **{title}\n\n⏳زمان الاغنيه:** {duration_min} Mins\n\n__[احصل علي معلومات اضافيه](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
