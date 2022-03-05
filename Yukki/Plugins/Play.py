@@ -189,7 +189,7 @@ async def play(_, message: Message):
         )
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎العنوان: **{title}\n\n⏳زمن الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎العنوان: **{title}\n\n⏳زمان الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
@@ -378,7 +378,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎العنوان: **{title}\n\n⏳زمن الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎العنوان: **{title}\n\n⏳زمان الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -401,7 +401,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎العنوان: **{title}\n\n⏳زمن الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎العنوان: **{title}\n\n⏳زماشن الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
