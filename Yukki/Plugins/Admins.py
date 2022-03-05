@@ -149,7 +149,7 @@ async def admins(_, message: Message):
                 final_output = await message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__بداء الاغنيه:__</b> {title} \n⏳<b>__زمن الاغنيه:__</b> {duration_min} \n👤<b>__طلب من:__ </b> {mention}",
+                    caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__بداء الاغنيه:__</b> {title} \n⏳<b>__زمان الاغنيه:__</b> {duration_min} \n👤<b>__طلب من:__ </b> {mention}",
                 )
                 await start_timer(
                     videoid,
@@ -269,7 +269,7 @@ async def admins(_, message: Message):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__بداء الاغنيه:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__زمن الاغنيه:__</b> {duration_min} Mins\n👤**__طلب من:__** {mention}"
+                        f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__بداء الاغنيه:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__زمان الاغنيه:__</b> {duration_min} Mins\n👤**__طلب من:__** {mention}"
                     ),
                 )
                 os.remove(thumb)
