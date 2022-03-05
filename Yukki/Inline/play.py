@@ -42,7 +42,7 @@ def url_markup2(videoid, duration, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🎵 تشغيل الموسيقا",
+                text="🎵 تشغيل الموسيقي",
                 callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
