@@ -74,7 +74,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="قناه البوت ✉"", url=f"{SUPPORT_CHANNEL}"
+                    text="قناه البوت ✉", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -93,7 +93,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="✉قناه البوت", url=f"{SUPPORT_CHANNEL}"
+                    text="قناه المطور ✉", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
                     text="جروب المطور ✉", url=f"{SUPPORT_GROUP}"
