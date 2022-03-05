@@ -43,7 +43,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
         formats = YT_info(url)
     except Exception:
         return await CallbackQuery.message.reply_text(
-            "Failed To Fetch Data from YT...Could be YTDL issue."
+            "لم استطيع الحصول ععلي المعلومات الرجاء المحاوله مرا اخري."
         )
     j = 0
     for x in formats:
@@ -53,32 +53,32 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 j += 1
                 if j == 1:
                     a1 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"صوت 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 2:
                     a2 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"صوت 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 3:
                     a3 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"صوت 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 4:
                     a4 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"صوت 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 5:
                     a5 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"صوت 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 6:
                     a6 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"صوت 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
         elif type == "video":
@@ -120,11 +120,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 )
         else:
             return await CallbackQuery.message.reply_text(
-                "Video Formats Not Found. Try Searching Other Music"
+                "لم استطيع العثور علي تلك الاغنيه حاول مرا اخري"
             )
     if j == 0:
         return await CallbackQuery.message.reply_text(
-            "Video Formats Not Found. Try Searching Other Music"
+            "لم استطيع الحصول علي تلك الاغنيه حاول مرا اخري"
         )
     elif j == 1:
         key = InlineKeyboardMarkup(
@@ -134,11 +134,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="⬅️  الرجوع الي الخلف",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="اغلاق القائمه ☒", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -152,11 +152,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="⬅️  الرجوع الي الخلف",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="اغلاق القائمه ☒", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -173,11 +173,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="الرجوع الي الخلف ⇦",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="اغلاق القائمه ☒", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -195,11 +195,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="⬅️  الرجوع الي الخلف",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="اغلاق القائمه ☒", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -220,11 +220,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="الرجوع الي الخلف ⇦",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="اغلاق القائمه ☒", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -246,18 +246,18 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="⬅️  الرجوع الي الخلف",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="اغلاق القائمه ☒", callback_data=f"close2"
                     ),
                 ],
             ]
         )
     else:
         return await CallbackQuery.message.reply_text(
-            "Video Formats Not Found. Try Searching Other Music"
+            "لم استطيع الحصول علي تلك الاغنيه حاول مرا اخري"
         )
     return key
 
@@ -265,20 +265,20 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
 def get_type(type, format, videoid, user_id):
     if type == "audio":
         a1 = InlineKeyboardButton(
-            text=f"Audio Form",
+            text=f"صوت من",
             callback_data=f"boom audio||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            text=f"Document Form",
+            text=f"المساعده من",
             callback_data=f"boom docaudio||{format}||{videoid}",
         )
     else:
         a1 = InlineKeyboardButton(
-            text=f"Video Form",
+            text=f"فيديو من",
             callback_data=f"boom video||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            text=f"Document Form",
+            text=f"المساعده من",
             callback_data=f"boom docvideo||{format}||{videoid}",
         )
     key = InlineKeyboardMarkup(
@@ -289,11 +289,11 @@ def get_type(type, format, videoid, user_id):
             ],
             [
                 InlineKeyboardButton(
-                    text="⬅️  Go Back",
+                    text="⬅️  الرجوع الي الخلف",
                     callback_data=f"good {videoid}|{user_id}",
                 ),
                 InlineKeyboardButton(
-                    text="🗑 Close Menu", callback_data=f"close2"
+                    text="اغلاق القائمه ☒", callback_data=f"close2"
                 ),
             ],
         ]
