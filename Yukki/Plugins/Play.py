@@ -158,7 +158,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎العنوان: **{title}\n\n⏳زمن الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎العنوان: **{title}\n\n⏳زمان الاغنيه:** {duration_min} Mins\n\n__[احصل على معلومات إضافية](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -174,7 +174,7 @@ async def play(_, message: Message):
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return
-        mystic = await message.reply_text("🔍 **المزيد من البحث**...")
+        mystic = await message.reply_text("🔍 **جاري البحث**...")
         query = message.text.split(None, 1)[1]
         (
             title,
